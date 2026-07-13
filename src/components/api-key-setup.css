@@ -1,0 +1,85 @@
+.key-setup {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+}
+
+.key-setup-card {
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.key-setup-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: var(--accent-code-soft);
+  color: var(--accent-code);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.key-setup-card h2 {
+  font-size: 19px;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.key-setup-card p {
+  font-size: 13.5px;
+}
+
+.key-setup-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 14px 0 6px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent-code);
+}
+
+.key-setup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.key-setup-input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: var(--font-mono);
+  color: var(--text);
+  text-align: center;
+}
+
+.key-setup-input:focus {
+  border-color: var(--accent-code-dim);
+}
+
+.key-setup-error {
+  color: var(--danger);
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.key-setup-note {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-top: 10px;
+}

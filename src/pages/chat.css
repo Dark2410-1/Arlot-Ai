@@ -1,0 +1,27 @@
+.chat-page {
+  flex: 1;
+  display: flex;
+  padding: 28px 0 40px;
+}
+
+.chat-page-inner {
+  flex: 1;
+  display: flex;
+  max-width: 880px;
+}
+
+.chat-page .chat-shell {
+  flex: 1;
+  min-height: 560px;
+  max-height: calc(100vh - 160px);
+}
+
+@media (max-width: 640px) {
+  .chat-page {
+    padding: 14px 0 0;
+  }
+  .chat-page .chat-shell {
+    min-height: calc(100vh - 200px);
+    border-radius: var(--radius-md);
+  }
+}

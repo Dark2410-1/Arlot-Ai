@@ -1,0 +1,105 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 13, 19, 0.72);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot-code {
+  background: var(--accent-code);
+  box-shadow: 0 0 10px rgba(108, 140, 255, 0.7);
+}
+
+.dot-game {
+  background: var(--accent-game);
+  box-shadow: 0 0 10px rgba(255, 145, 82, 0.7);
+  margin-top: 6px;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.brand-ai {
+  color: var(--text-faint);
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-link {
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.nav-link.active {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.nav-cta {
+  padding: 9px 18px;
+  font-size: 13.5px;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .nav-links {
+    display: none;
+  }
+  .brand-name {
+    font-size: 17px;
+  }
+}
+
+.brand-logo {
+  height: 32px;
+  width: auto;
+}
