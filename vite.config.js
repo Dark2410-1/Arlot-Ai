@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Arlot-Ai/',
+  base: '/Arlot-Ai/',   // Repository nomi bilan bir xil bo‘lishi shart
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
+    emptyOutDir: true,
   },
 })
